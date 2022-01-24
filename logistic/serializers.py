@@ -58,4 +58,4 @@ class StockSerializer(serializers.ModelSerializer):
                 product=element['product'],
                 defaults={'stock': stock, 'product': element['product'], 'quantity': element['quantity'], 'price': element['price']}
             )
-        return
+        return stock
